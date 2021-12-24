@@ -1,38 +1,44 @@
 .App {
-  text-align: center;
+    display: flex;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.block_address{
+    margin-right: 30px;
+}
+.input_search{
+    margin-right: 30px;
+}
+.input_search input{
+    width: 480px;
+}
+.address{
+    margin-top: 10px;
+    border: 1px solid black;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: move;
+}
+.address button{
+    color: white;
+    background: red;
+    outline: none;
+    border: 1px solid #000;
+    border-radius: 50%;
+    margin-right: 5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ymaps[class$="balloon__content"] {
+    background: #3da9fc;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ymaps[class$="balloon__layout"] {
+    padding: 5px;
+    background: #3da9fc;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ymaps[class$="balloon__tail"]::after {
+    background: #3da9fc;
 }
